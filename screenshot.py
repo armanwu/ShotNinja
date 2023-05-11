@@ -5,9 +5,9 @@ def take_sc(output_path):
     try:
         screenshot = pyautogui.screenshot()
         screenshot.save(output_path)
-        print("Screenshot saved successfully in", output_path)
+        print("Tangkapan layar berhasil disimpan di", output_path)
     except Exception as e:
-        print("Sorry! Failed to take screenshot:", str(e))
+        print("Maaf! Gagal melakukan tangkapan layar:", str(e))
 
 output_file = "D:\layar.png"
 
