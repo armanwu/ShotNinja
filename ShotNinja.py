@@ -22,13 +22,13 @@ def take_ss():
 
 root = tk.Tk()
 root.title("ShotNinja")
-root.geometry("300x100")
+root.geometry("250x100")
 root.resizable(False, False)
 
 def button_click():
     take_ss()
 
-ss_button = tk.Button(root, text="Shoot it!", command=button_click)
+ss_button = tk.Button(root, text="Shoot it!", command=button_click, height = 2, width = 10)
 ss_button.pack(pady=30)
 
 root.mainloop()
