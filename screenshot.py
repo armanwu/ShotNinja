@@ -1,7 +1,7 @@
 import pyautogui
 import tkinter as tk
 
-def take_sc(output_path):
+def take_ss(output_path):
     try:
         screenshot = pyautogui.screenshot()
         screenshot.save(output_path)
@@ -15,7 +15,7 @@ root = tk.Tk()
 root.title("Tangkap Layar")
 root.geometry("300x100")
 
-screenshot_button = tk.Button(root, text="Tangkap Layar!", command=take_sc(output_file))
-screenshot_button.pack(pady=30)
+ss_button = tk.Button(root, text="Tangkap Layar!", command=take_ss(output_file))
+ss_button.pack(pady=30)
 
 root.mainloop()
